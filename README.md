@@ -1,0 +1,2 @@
+# GoLib
+golang library functions
