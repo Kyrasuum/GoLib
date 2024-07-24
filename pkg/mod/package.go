@@ -1,4 +1,4 @@
-package pkg
+package mod
 
 import (
 	"gorm.io/gorm"

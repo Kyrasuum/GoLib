@@ -40,7 +40,6 @@ func WorkerPool(conf cache_config, work chan task, workcache cache, shutdown cha
 						go WorkerThread(conf, curtask.Handler, workcache[hash], curtask.Data, shutdown)
 						curtask.Channel <- <-workcache[hash]
 					}
-					continue
 				}
 			}
 		case <-shutdown:
